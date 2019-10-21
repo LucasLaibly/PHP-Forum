@@ -40,7 +40,7 @@ class Topic
          $dateC = $this->dateCreate;
 
          //set a base line for the updated date
-         $this->dateUpdated();
+         $this->dateCreated();
          $dateU = $this->dateUpdate;
 
          //compile the array
@@ -75,21 +75,6 @@ class Topic
 
          $totalDate = $day . "/" . $month . "/" . $year;
          $this->dateCreate = $totalDate;
-     }
-
-     //TODO: fix this because it is wrong, we need to update array with it
-    /**
-     * Make an update date
-     */
-     public function dateUpdated()
-     {
-         $date = getdate();
-         $day = $date['mday'];
-         $month = $date['mon'];
-         $year =  $date['year'];
-
-         $upDate = $day . "/" . $month . "/" . $year;
-         $this->dateUpdate = $upDate;
      }
 
     /**

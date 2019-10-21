@@ -27,7 +27,7 @@ else {
     // The form has not been posted
     // Show the form
     ?>
-    <form id="NewUserForm" action="login.php" method="post">
+    <form id=NewUserForm" action="login.php" method="post">
         Username: <input type="text" name="Username"><br>
         Email: <input type="email" name="Email"><br>
         Remember me: <input type="checkbox" name="Remember" checked="checked">

@@ -10,7 +10,7 @@ if(isset($_POST['newtopic']))
 //direct to see all topics
 if(isset($_POST['topics']))
 {
-    header('Location: topiclist.php');
+    header('Location: topicslist.php');
     exit;
 }
 
